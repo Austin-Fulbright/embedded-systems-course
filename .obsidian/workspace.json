@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Course/index.md",
+                "file": "docs/Course/C-programming/basic_syntax_quick/basic_syntax_quick.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/Course/index.md",
+                "file": "docs/Course/C-programming/basic_syntax_quick/basic_syntax_quick.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/Course/index.md",
+                "file": "docs/Course/C-programming/basic_syntax_quick/basic_syntax_quick.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/Course/index.md"
+                "file": "docs/Course/C-programming/basic_syntax_quick/basic_syntax_quick.md"
               }
             }
           }
@@ -148,27 +148,31 @@
   },
   "active": "9da151611cf2c70d",
   "lastOpenFiles": [
+    "Pasted image 20240915105701.png",
+    "docs/Course/C-programming/advanced_memory_management_and_pointers/advanced_memory_management_and_pointers.md",
+    "docs/Course/C-programming/basic_syntax_quick/basic_syntax_quick.md",
+    "docs/Course/index.md",
+    "site/search/search_index.json",
+    "site/search",
+    "site/Course/embedded_system_basics_2/Optimization/index.html",
+    "site/Course/embedded_system_basics_2/Optimization",
+    "site/Course/embedded_system_basics_2",
+    "site/Course/Introduction/Untitled/index.html",
+    "site/Course/Introduction/Untitled",
+    "site/Course/Introduction",
+    "site/Course/Embedded_Systems_Basics_1/Embedded_Basics/index.html",
+    "site/Course/Embedded_Systems_Basics_1/Embedded_Basics",
     "docs/Course/C-programming/optimization/simd/simd.md",
     "docs/Course/C-programming/optimization/processor_specific/processor_specific.md",
     "docs/Course/C-programming/optimization/manual_loop_optimization/manual_loop_optimization.md",
     "docs/Course/C-programming/optimization/cache_friendly_code/cache_friendly_code.md",
     "docs/Course/C-programming/optimization/inline_assembly/inline_assembly.md",
     "docs/Course/C-programming/optimization/algorithmic_optimization/algorithmic_optimization.md",
-    "docs/Course/C-programming/optimization/simd",
-    "docs/Course/C-programming/optimization/processor_specific",
     "docs/Course/C-programming/optimization/optimization.md",
-    "docs/Course/C-programming/optimization/manual_loop_optimization",
-    "docs/Course/C-programming/optimization/cache_friendly_code",
-    "docs/Course/C-programming/optimization/inline_assembly",
-    "docs/Course/C-programming/optimization/algorithmic_optimization",
-    "docs/Course/C-programming/optimization",
     "docs/Course/C-programming/hardware_specific_programming/firmware_development/firmware_development.md",
     "docs/Course/C-programming/hardware_specific_programming/bootloaders/bootloaders.md",
     "docs/Course/C-programming/hardware_specific_programming/avr_arm_programming/avr_arm_programming.md",
     "docs/Course/C-programming/hardware_specific_programming/hardware_specific_programming.md",
-    "docs/Course/C-programming/hardware_specific_programming/firmware_development",
-    "docs/Course/C-programming/hardware_specific_programming/bootloaders",
-    "docs/Course/C-programming/hardware_specific_programming/avr_arm_programming",
     "docs/Course/C-programming/systems_programming/system_calls/system_calls.md",
     "docs/Course/C-programming/systems_programming/signals/signals.md",
     "docs/Course/C-programming/systems_programming/process_control_ipc/process_control_ipc.md",
@@ -179,10 +183,6 @@
     "docs/Course/C-programming/low_level_debugging/valgrind_perf_gprof/valgrind_perf_gprof.md",
     "docs/Course/C-programming/low_level_debugging/stack_unwinding_core_dump/stack_unwinding_core_dump.md",
     "docs/Course/C-programming/low_level_debugging/reverse_engineering/reverse_engineering.md",
-    "docs/Course/C-programming/low_level_debugging/performance_counters/performance_counters.md",
-    "docs/Course/C-programming/low_level_debugging/compiler_optimization_impact/compiler_optimization_impact.md",
-    "docs/Course/C-programming/low_level_debugging/low_level_debugging.md",
-    "docs/Course/C-programming/advanced_file_systems_and_io/memory_mapped_files/memory_mapped_files.md",
-    "docs/Course/C-programming/advanced_file_systems_and_io/high_performance_io/high_performance_io.md"
+    "docs/Course/C-programming/low_level_debugging/performance_counters/performance_counters.md"
   ]
 }
