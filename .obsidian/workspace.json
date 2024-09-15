@@ -1,0 +1,157 @@
+{
+  "main": {
+    "id": "3897445ba94bf4fc",
+    "type": "split",
+    "children": [
+      {
+        "id": "739e0cf6f625a317",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ff903e7d51f5ce67",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/Course/index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "274e800434fbecb2",
+    "type": "split",
+    "children": [
+      {
+        "id": "9e660360bf722b0a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e43dba2f1135cde0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "433269fd22a6840b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "877732dee053be07",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "21b500d09dbf65a7",
+    "type": "split",
+    "children": [
+      {
+        "id": "86369976d959852f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "41c07df30a9426a6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/Course/index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f363184ddc84be19",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/Course/index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "432f013251a69021",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "cfbfe0e1d22be369",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/Course/index.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "ff903e7d51f5ce67",
+  "lastOpenFiles": [
+    "docs/Course/C-programing/Introduction_C.md",
+    "docs/Course/index.md",
+    "docs/Course/Introduction/Untitled.md",
+    "docs/Course/Embedded_Systems_Basics_1/Embedded_Basics.md",
+    "docs/Course/embedded_system_basics_2/Optimization.md"
+  ]
+}

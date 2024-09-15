@@ -3,13 +3,15 @@ site_url: "https://Austin-Fulbright.github.io/embedded-systems-course/"
 theme:
   name: material
   custom_dir: overrides
+
 nav:
   - Home: index.md
   - Module 1:
-      - Introduction: Course/EmbeddedIntroduction/Untitled.md
-  - :
+      - Introduction: Course/Introduction/Untitled.md
+  - Module 2:
       - C programming: Course/C-programing/Introduction_C.md
-      - Embedded Systems Basics: docs/Course/Embedded_Systems_Basics_1/Embedded_Basics.md
+      - Embedded Systems Basics: Course/Embedded_Systems_Basics_1/Embedded_Basics.md
+
 markdown_extensions:
   - admonition
   - codehilite
