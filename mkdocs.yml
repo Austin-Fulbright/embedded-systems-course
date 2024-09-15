@@ -5,7 +5,7 @@ theme:
   custom_dir: overrides
 
 nav:
-  - Home: index.md
+  - Home: Course/index.md
   - Module 1:
       - Introduction: Course/Introduction/Untitled.md
   - Module 2:
