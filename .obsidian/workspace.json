@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "739e0cf6f625a317",
+        "id": "704609c88d173c4a",
         "type": "tabs",
         "children": [
           {
-            "id": "ff903e7d51f5ce67",
+            "id": "9da151611cf2c70d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -146,11 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e43dba2f1135cde0",
+  "active": "9da151611cf2c70d",
   "lastOpenFiles": [
+    "docs/Course/index.md",
     "site/Course/index.html",
     "docs/Course/C-programing/Introduction_C.md",
-    "docs/Course/index.md",
     "docs/Course/Introduction/Untitled.md",
     "docs/Course/Embedded_Systems_Basics_1/Embedded_Basics.md",
     "docs/Course/embedded_system_basics_2/Optimization.md"
