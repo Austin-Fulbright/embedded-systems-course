@@ -8,21 +8,25 @@
       
       
       
-        <link rel="canonical" href="https://Austin-Fulbright.github.io/embedded-systems-course/Course/C-programing/Introduction_C/">
+        <link rel="canonical" href="https://Austin-Fulbright.github.io/embedded-systems-course/Course/Embedded-Systems/">
       
       
+        <link rel="prev" href="../Computer-Architecture/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+        <link rel="next" href="../ESP-IDF/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
     
     
       
-        <title>Introduction C - Embedded Systems Course</title>
+        <title>Embedded Systems - Embedded Systems Course</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
       
       
 
@@ -41,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -59,11 +63,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#primitives-in-c" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -76,7 +75,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Embedded Systems Course" class="md-header__button md-logo" aria-label="Embedded Systems Course" data-md-component="logo">
+    <a href="../.." title="Embedded Systems Course" class="md-header__button md-logo" aria-label="Embedded Systems Course" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -96,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction C
+              Embedded Systems
             
           </span>
         </div>
@@ -171,7 +170,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Embedded Systems Course" class="md-nav__button md-logo" aria-label="Embedded Systems Course" data-md-component="logo">
+    <a href="../.." title="Embedded Systems Course" class="md-nav__button md-logo" aria-label="Embedded Systems Course" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -189,7 +188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -244,7 +243,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/basic_syntax_quick/basic_syntax_quick/" class="md-nav__link">
+      <a href="../C-programming/basic_syntax_quick/basic_syntax_quick/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -300,7 +299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/arrays/arrays_as_functions/arrays_as_functions/" class="md-nav__link">
+      <a href="../C-programming/arrays/arrays_as_functions/arrays_as_functions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -321,7 +320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/arrays/character_arrays/character_arrays/" class="md-nav__link">
+      <a href="../C-programming/arrays/character_arrays/character_arrays/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -385,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/memory/heap_vs_stack/heap_vs_stack/" class="md-nav__link">
+      <a href="../C-programming/memory/heap_vs_stack/heap_vs_stack/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -406,7 +405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/memory/dynamic_memory_allocation/dynamic_memory_allocation/" class="md-nav__link">
+      <a href="../C-programming/memory/dynamic_memory_allocation/dynamic_memory_allocation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -427,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/memory/everything_pointers/everything_pointers/" class="md-nav__link">
+      <a href="../C-programming/memory/everything_pointers/everything_pointers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -491,7 +490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/structures/self_referential_structures/self_referential_structures/" class="md-nav__link">
+      <a href="../C-programming/structures/self_referential_structures/self_referential_structures/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -512,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/structures/unions/unions/" class="md-nav__link">
+      <a href="../C-programming/structures/unions/unions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -533,7 +532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/structures/bit_fields_in_structures/bit_fields_in_structures/" class="md-nav__link">
+      <a href="../C-programming/structures/bit_fields_in_structures/bit_fields_in_structures/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -562,7 +561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/file_handling/file_handling/" class="md-nav__link">
+      <a href="../C-programming/file_handling/file_handling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -618,7 +617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/advanced_memory_management_and_pointers/memory_leaks/memory_leaks/" class="md-nav__link">
+      <a href="../C-programming/advanced_memory_management_and_pointers/memory_leaks/memory_leaks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -639,7 +638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/advanced_memory_management_and_pointers/memory_management_techniques/memory_management_techniques/" class="md-nav__link">
+      <a href="../C-programming/advanced_memory_management_and_pointers/memory_management_techniques/memory_management_techniques/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -660,7 +659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/advanced_memory_management_and_pointers/buffer_overflow/buffer_overflow/" class="md-nav__link">
+      <a href="../C-programming/advanced_memory_management_and_pointers/buffer_overflow/buffer_overflow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -681,7 +680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/advanced_memory_management_and_pointers/security_vulnerabilities/security_vulnerabilities/" class="md-nav__link">
+      <a href="../C-programming/advanced_memory_management_and_pointers/security_vulnerabilities/security_vulnerabilities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -702,7 +701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/advanced_memory_management_and_pointers/constant_pointers/constant_pointers/" class="md-nav__link">
+      <a href="../C-programming/advanced_memory_management_and_pointers/constant_pointers/constant_pointers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -723,7 +722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/advanced_memory_management_and_pointers/void_pointers/void_pointers/" class="md-nav__link">
+      <a href="../C-programming/advanced_memory_management_and_pointers/void_pointers/void_pointers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -744,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/advanced_memory_management_and_pointers/function_pointer_arrays_and_callbacks/function_pointer_arrays_and_callbacks/" class="md-nav__link">
+      <a href="../C-programming/advanced_memory_management_and_pointers/function_pointer_arrays_and_callbacks/function_pointer_arrays_and_callbacks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -808,7 +807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/preprocessor_directives/macros/macros/" class="md-nav__link">
+      <a href="../C-programming/preprocessor_directives/macros/macros/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -829,7 +828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/preprocessor_directives/conditional_compilation/conditional_compilation/" class="md-nav__link">
+      <a href="../C-programming/preprocessor_directives/conditional_compilation/conditional_compilation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -850,7 +849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/preprocessor_directives/file_inclusion/file_inclusion/" class="md-nav__link">
+      <a href="../C-programming/preprocessor_directives/file_inclusion/file_inclusion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -871,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/preprocessor_directives/stringizing_and_token_pasting/stringizing_and_token_pasting/" class="md-nav__link">
+      <a href="../C-programming/preprocessor_directives/stringizing_and_token_pasting/stringizing_and_token_pasting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -935,7 +934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/error_handling/error_codes/error_codes/" class="md-nav__link">
+      <a href="../C-programming/error_handling/error_codes/error_codes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -956,7 +955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/error_handling/assert_macros/assert_macros/" class="md-nav__link">
+      <a href="../C-programming/error_handling/assert_macros/assert_macros/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -977,7 +976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/error_handling/setjmp_and_longjmp/setjmp_and_longjmp/" class="md-nav__link">
+      <a href="../C-programming/error_handling/setjmp_and_longjmp/setjmp_and_longjmp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1006,7 +1005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/multithreading_and_concurrency/multithreading_and_concurrency/" class="md-nav__link">
+      <a href="../C-programming/multithreading_and_concurrency/multithreading_and_concurrency/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1027,7 +1026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/data_structures_quick/data_structures_quick/" class="md-nav__link">
+      <a href="../C-programming/data_structures_quick/data_structures_quick/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1048,7 +1047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/oop_concepts_in_c/oop_concepts_in_c/" class="md-nav__link">
+      <a href="../C-programming/oop_concepts_in_c/oop_concepts_in_c/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1069,7 +1068,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/procedural_programming_in_c/procedural_programming_in_c/" class="md-nav__link">
+      <a href="../C-programming/procedural_programming_in_c/procedural_programming_in_c/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1125,7 +1124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/networking/sockets/sockets/" class="md-nav__link">
+      <a href="../C-programming/networking/sockets/sockets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1146,7 +1145,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/networking/client_server/client_server/" class="md-nav__link">
+      <a href="../C-programming/networking/client_server/client_server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1167,7 +1166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/networking/tcp_vs_udp/tcp_vs_udp/" class="md-nav__link">
+      <a href="../C-programming/networking/tcp_vs_udp/tcp_vs_udp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1188,7 +1187,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/networking/multithreaded_network_app/multithreaded_network_app/" class="md-nav__link">
+      <a href="../C-programming/networking/multithreaded_network_app/multithreaded_network_app/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1209,7 +1208,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/networking/protocols/protocols/" class="md-nav__link">
+      <a href="../C-programming/networking/protocols/protocols/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1273,7 +1272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/low_level_programming/bitwise/bitwise/" class="md-nav__link">
+      <a href="../C-programming/low_level_programming/bitwise/bitwise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1294,7 +1293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/low_level_programming/inline_assembly/inline_assembly/" class="md-nav__link">
+      <a href="../C-programming/low_level_programming/inline_assembly/inline_assembly/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1315,7 +1314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/low_level_programming/memory_mapped_io/memory_mapped_io/" class="md-nav__link">
+      <a href="../C-programming/low_level_programming/memory_mapped_io/memory_mapped_io/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1336,7 +1335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/low_level_programming/interfacing_with_hardware/interfacing_with_hardware/" class="md-nav__link">
+      <a href="../C-programming/low_level_programming/interfacing_with_hardware/interfacing_with_hardware/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1357,7 +1356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/low_level_programming/embedded_systems/embedded_systems/" class="md-nav__link">
+      <a href="../C-programming/low_level_programming/embedded_systems/embedded_systems/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1421,7 +1420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/c_advanced_memory_for_embed_sys/custom_allocators/custom_allocators/" class="md-nav__link">
+      <a href="../C-programming/c_advanced_memory_for_embed_sys/custom_allocators/custom_allocators/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1442,7 +1441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/c_advanced_memory_for_embed_sys/mem_pools/mem_pools/" class="md-nav__link">
+      <a href="../C-programming/c_advanced_memory_for_embed_sys/mem_pools/mem_pools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1463,7 +1462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/c_advanced_memory_for_embed_sys/memory_alignment_for_simd/memory_alignment_for_simd/" class="md-nav__link">
+      <a href="../C-programming/c_advanced_memory_for_embed_sys/memory_alignment_for_simd/memory_alignment_for_simd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1484,7 +1483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/c_advanced_memory_for_embed_sys/memory_fragments_and_defrags/memory_fragments_and_defrags/" class="md-nav__link">
+      <a href="../C-programming/c_advanced_memory_for_embed_sys/memory_fragments_and_defrags/memory_fragments_and_defrags/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1505,7 +1504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/c_advanced_memory_for_embed_sys/garbage_collection/garbage_collection/" class="md-nav__link">
+      <a href="../C-programming/c_advanced_memory_for_embed_sys/garbage_collection/garbage_collection/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1569,7 +1568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/c_advanced_multithreading_for_embed_sys/lock_free_programming/lock_free_programming/" class="md-nav__link">
+      <a href="../C-programming/c_advanced_multithreading_for_embed_sys/lock_free_programming/lock_free_programming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1590,7 +1589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/c_advanced_multithreading_for_embed_sys/thread_pools/thread_pools/" class="md-nav__link">
+      <a href="../C-programming/c_advanced_multithreading_for_embed_sys/thread_pools/thread_pools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1611,7 +1610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/c_advanced_multithreading_for_embed_sys/atomic_operations/atomic_operations/" class="md-nav__link">
+      <a href="../C-programming/c_advanced_multithreading_for_embed_sys/atomic_operations/atomic_operations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1632,7 +1631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/c_advanced_multithreading_for_embed_sys/memory_barriers_and_fences/memory_barriers_and_fences/" class="md-nav__link">
+      <a href="../C-programming/c_advanced_multithreading_for_embed_sys/memory_barriers_and_fences/memory_barriers_and_fences/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1653,7 +1652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/c_advanced_multithreading_for_embed_sys/deadlock_detection_and_avoidance/deadlock_detection_and_avoidance/" class="md-nav__link">
+      <a href="../C-programming/c_advanced_multithreading_for_embed_sys/deadlock_detection_and_avoidance/deadlock_detection_and_avoidance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1674,7 +1673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/c_advanced_multithreading_for_embed_sys/concurrent_data_structures/concurrent_data_structures/" class="md-nav__link">
+      <a href="../C-programming/c_advanced_multithreading_for_embed_sys/concurrent_data_structures/concurrent_data_structures/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1738,7 +1737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/compilers_and_linkers/writing_c_compilers_and_interpreters/writing_c_compilers_and_interpreters/" class="md-nav__link">
+      <a href="../C-programming/compilers_and_linkers/writing_c_compilers_and_interpreters/writing_c_compilers_and_interpreters/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1759,7 +1758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/compilers_and_linkers/compiler_optimization/compiler_optimization/" class="md-nav__link">
+      <a href="../C-programming/compilers_and_linkers/compiler_optimization/compiler_optimization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1780,7 +1779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/compilers_and_linkers/linker_scripts/linker_scripts/" class="md-nav__link">
+      <a href="../C-programming/compilers_and_linkers/linker_scripts/linker_scripts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1801,7 +1800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/compilers_and_linkers/cross_compilation/cross_compilation/" class="md-nav__link">
+      <a href="../C-programming/compilers_and_linkers/cross_compilation/cross_compilation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1822,7 +1821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/compilers_and_linkers/code_generation/code_generation/" class="md-nav__link">
+      <a href="../C-programming/compilers_and_linkers/code_generation/code_generation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1843,7 +1842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/compilers_and_linkers/ir_compiler_design/ir_compiler_design/" class="md-nav__link">
+      <a href="../C-programming/compilers_and_linkers/ir_compiler_design/ir_compiler_design/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1907,7 +1906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/embedded_c/direct_register_access/direct_register_access/" class="md-nav__link">
+      <a href="../C-programming/embedded_c/direct_register_access/direct_register_access/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1928,7 +1927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/embedded_c/writing_device_drivers/writing_device_drivers/" class="md-nav__link">
+      <a href="../C-programming/embedded_c/writing_device_drivers/writing_device_drivers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1949,7 +1948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/embedded_c/isr_in_embedded_systems/isr_in_embedded_systems/" class="md-nav__link">
+      <a href="../C-programming/embedded_c/isr_in_embedded_systems/isr_in_embedded_systems/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1970,7 +1969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/embedded_c/bare_metal_programming/bare_metal_programming/" class="md-nav__link">
+      <a href="../C-programming/embedded_c/bare_metal_programming/bare_metal_programming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1991,7 +1990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/embedded_c/real_time_operating_system/real_time_operating_system/" class="md-nav__link">
+      <a href="../C-programming/embedded_c/real_time_operating_system/real_time_operating_system/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2012,7 +2011,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/embedded_c/low_power_design/low_power_design/" class="md-nav__link">
+      <a href="../C-programming/embedded_c/low_power_design/low_power_design/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2076,7 +2075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/metaprogramming/metaprogramming_with_injection/metaprogramming_with_injection/" class="md-nav__link">
+      <a href="../C-programming/metaprogramming/metaprogramming_with_injection/metaprogramming_with_injection/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2097,7 +2096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/metaprogramming/using_templates/using_templates/" class="md-nav__link">
+      <a href="../C-programming/metaprogramming/using_templates/using_templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2118,7 +2117,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/metaprogramming/code_abstraction/code_abstraction/" class="md-nav__link">
+      <a href="../C-programming/metaprogramming/code_abstraction/code_abstraction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2182,7 +2181,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/dynamic_libraries_and_linkers/creating_shared_objects/creating_shared_objects/" class="md-nav__link">
+      <a href="../C-programming/dynamic_libraries_and_linkers/creating_shared_objects/creating_shared_objects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2203,7 +2202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/dynamic_libraries_and_linkers/position_independent_code/position_independent_code/" class="md-nav__link">
+      <a href="../C-programming/dynamic_libraries_and_linkers/position_independent_code/position_independent_code/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2224,7 +2223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/dynamic_libraries_and_linkers/inter_process_communication/inter_process_communication/" class="md-nav__link">
+      <a href="../C-programming/dynamic_libraries_and_linkers/inter_process_communication/inter_process_communication/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2288,7 +2287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/advanced_file_systems_and_io/async_io/async_io/" class="md-nav__link">
+      <a href="../C-programming/advanced_file_systems_and_io/async_io/async_io/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2309,7 +2308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/advanced_file_systems_and_io/memory_mapped_files/memory_mapped_files/" class="md-nav__link">
+      <a href="../C-programming/advanced_file_systems_and_io/memory_mapped_files/memory_mapped_files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2330,7 +2329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/advanced_file_systems_and_io/high_performance_io/high_performance_io/" class="md-nav__link">
+      <a href="../C-programming/advanced_file_systems_and_io/high_performance_io/high_performance_io/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2394,7 +2393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/low_level_debugging/valgrind_perf_gprof/valgrind_perf_gprof/" class="md-nav__link">
+      <a href="../C-programming/low_level_debugging/valgrind_perf_gprof/valgrind_perf_gprof/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2415,7 +2414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/low_level_debugging/performance_counters/performance_counters/" class="md-nav__link">
+      <a href="../C-programming/low_level_debugging/performance_counters/performance_counters/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2436,7 +2435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/low_level_debugging/compiler_optimization_impact/compiler_optimization_impact/" class="md-nav__link">
+      <a href="../C-programming/low_level_debugging/compiler_optimization_impact/compiler_optimization_impact/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2457,7 +2456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/low_level_debugging/reverse_engineering/reverse_engineering/" class="md-nav__link">
+      <a href="../C-programming/low_level_debugging/reverse_engineering/reverse_engineering/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2478,7 +2477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/low_level_debugging/stack_unwinding_core_dump/stack_unwinding_core_dump/" class="md-nav__link">
+      <a href="../C-programming/low_level_debugging/stack_unwinding_core_dump/stack_unwinding_core_dump/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2542,7 +2541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/systems_programming/system_calls/system_calls/" class="md-nav__link">
+      <a href="../C-programming/systems_programming/system_calls/system_calls/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2563,7 +2562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/systems_programming/daemons/daemons/" class="md-nav__link">
+      <a href="../C-programming/systems_programming/daemons/daemons/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2584,7 +2583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/systems_programming/signals/signals/" class="md-nav__link">
+      <a href="../C-programming/systems_programming/signals/signals/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2605,7 +2604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/systems_programming/process_control_ipc/process_control_ipc/" class="md-nav__link">
+      <a href="../C-programming/systems_programming/process_control_ipc/process_control_ipc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2626,7 +2625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/systems_programming/memory_protection/memory_protection/" class="md-nav__link">
+      <a href="../C-programming/systems_programming/memory_protection/memory_protection/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2647,7 +2646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/systems_programming/loadable_kernel_modules/loadable_kernel_modules/" class="md-nav__link">
+      <a href="../C-programming/systems_programming/loadable_kernel_modules/loadable_kernel_modules/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2711,7 +2710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/hardware_specific_programming/bootloaders/bootloaders/" class="md-nav__link">
+      <a href="../C-programming/hardware_specific_programming/bootloaders/bootloaders/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2732,7 +2731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/hardware_specific_programming/firmware_development/firmware_development/" class="md-nav__link">
+      <a href="../C-programming/hardware_specific_programming/firmware_development/firmware_development/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2753,7 +2752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/hardware_specific_programming/avr_arm_programming/avr_arm_programming/" class="md-nav__link">
+      <a href="../C-programming/hardware_specific_programming/avr_arm_programming/avr_arm_programming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2817,7 +2816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/optimization/algorithmic_optimization/algorithmic_optimization/" class="md-nav__link">
+      <a href="../C-programming/optimization/algorithmic_optimization/algorithmic_optimization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2838,7 +2837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/optimization/manual_loop_optimization/manual_loop_optimization/" class="md-nav__link">
+      <a href="../C-programming/optimization/manual_loop_optimization/manual_loop_optimization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2859,7 +2858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/optimization/cache_friendly_code/cache_friendly_code/" class="md-nav__link">
+      <a href="../C-programming/optimization/cache_friendly_code/cache_friendly_code/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2880,7 +2879,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/optimization/simd/simd/" class="md-nav__link">
+      <a href="../C-programming/optimization/simd/simd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2901,7 +2900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/optimization/processor_specific/processor_specific/" class="md-nav__link">
+      <a href="../C-programming/optimization/processor_specific/processor_specific/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2922,7 +2921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C-programming/optimization/inline_assembly/inline_assembly/" class="md-nav__link">
+      <a href="../C-programming/optimization/inline_assembly/inline_assembly/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2951,6 +2950,174 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Computer-Architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Computer Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Embedded Systems
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ESP-IDF/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ESP-IDF
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ESP-IDF-for-cryptocurrency/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ESP-IDF for cryptocurrecy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ESP-IDF-for-game-development/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ESP-IDF for game development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Espressif/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Espressif
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FreeRTOS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FreeRTOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Operating-Systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operating Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -2969,32 +3136,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#primitives-in-c" class="md-nav__link">
-    <span class="md-ellipsis">
-      Primitives in C
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#another-heading" class="md-nav__link">
-    <span class="md-ellipsis">
-      another heading
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -3008,12 +3149,9 @@
                   
 
 
-  <h1>Introduction C</h1>
+  <h1>Embedded Systems</h1>
 
-<h5 id="primitives-in-c">Primitives in C<a class="headerlink" href="#primitives-in-c" title="Permanent link">&para;</a></h5>
-<p>''primitives in c introduction...</p>
-<h5 id="another-heading">another heading<a class="headerlink" href="#another-heading" title="Permanent link">&para;</a></h5>
-<p>'' another heading paragraph...</p>
+
 
 
 
@@ -3060,10 +3198,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
       
     
   </body>

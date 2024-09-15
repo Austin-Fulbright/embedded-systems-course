@@ -5,10 +5,6 @@
          <lastmod>2024-09-15</lastmod>
     </url>
     <url>
-         <loc>https://Austin-Fulbright.github.io/embedded-systems-course/Course/C-programing/Introduction_C/</loc>
-         <lastmod>2024-09-15</lastmod>
-    </url>
-    <url>
          <loc>https://Austin-Fulbright.github.io/embedded-systems-course/Course/C-programming/advanced_file_systems_and_io/advanced_file_systems_and_io/</loc>
          <lastmod>2024-09-15</lastmod>
     </url>
@@ -445,15 +441,35 @@
          <lastmod>2024-09-15</lastmod>
     </url>
     <url>
-         <loc>https://Austin-Fulbright.github.io/embedded-systems-course/Course/Embedded_Systems_Basics_1/Embedded_Basics/</loc>
+         <loc>https://Austin-Fulbright.github.io/embedded-systems-course/Course/Computer-Architecture/</loc>
          <lastmod>2024-09-15</lastmod>
     </url>
     <url>
-         <loc>https://Austin-Fulbright.github.io/embedded-systems-course/Course/Introduction/Untitled/</loc>
+         <loc>https://Austin-Fulbright.github.io/embedded-systems-course/Course/ESP-IDF/</loc>
          <lastmod>2024-09-15</lastmod>
     </url>
     <url>
-         <loc>https://Austin-Fulbright.github.io/embedded-systems-course/Course/embedded_system_basics_2/Optimization/</loc>
+         <loc>https://Austin-Fulbright.github.io/embedded-systems-course/Course/ESP-IDF-for-cryptocurrency/</loc>
+         <lastmod>2024-09-15</lastmod>
+    </url>
+    <url>
+         <loc>https://Austin-Fulbright.github.io/embedded-systems-course/Course/ESP-IDF-for-game-development/</loc>
+         <lastmod>2024-09-15</lastmod>
+    </url>
+    <url>
+         <loc>https://Austin-Fulbright.github.io/embedded-systems-course/Course/Embedded-Systems/</loc>
+         <lastmod>2024-09-15</lastmod>
+    </url>
+    <url>
+         <loc>https://Austin-Fulbright.github.io/embedded-systems-course/Course/Espressif/</loc>
+         <lastmod>2024-09-15</lastmod>
+    </url>
+    <url>
+         <loc>https://Austin-Fulbright.github.io/embedded-systems-course/Course/FreeRTOS/</loc>
+         <lastmod>2024-09-15</lastmod>
+    </url>
+    <url>
+         <loc>https://Austin-Fulbright.github.io/embedded-systems-course/Course/Operating-Systems/</loc>
          <lastmod>2024-09-15</lastmod>
     </url>
 </urlset>
