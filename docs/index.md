@@ -116,482 +116,588 @@ ADRUINO HAS CLUTERRED THE WOLRD WITH ITS ADRUINONESS EVERY SEARCH FOR THESE TOPI
 ---
 
 
-### What will this course cover:
+# Table of Contents
 
+## 1. The Basics
 
-1. The Basics
-	1. Computer Architecture
-		1. ISA
-		2. Microachitecture
-		3. System Desing
-		4. Assembly
-		5. logic implementation
-		6. circuit implementation
-		7. effeciency
-		8. processors
-		9. graphical processing units
-	2. C-programming
-		1. Basic Syntax quick
-		2. Arrays
-			1. arrays as functions
-			2. character arrays
-		3. Memory
-			1. heap vs stack
-			2. Dynamic memory allocation
-			3. Everything pointers
-		4. Structures
-			1. self-referential structures
-			2. Unions
-			3. Bit-fields in Structures
-		5. File Handling
-		6. Advanced Memory Mangament and Pointers
-			1. Memory Leaks
-			2. Memory Mangaement Techniques
-			3. Buffer Overflow
-			4. Security Vulrablities
-			5. Constant Pointers
-			6. Void Pointers
-			7. Function Pointer Arrays and Callbacks
-		7. Preprocessor Directives
-			1. Macros
-			2. Conditional Compliation
-			3. File Inclusion
-			4. Stringizing and Token Pasting
-		8. Error Handling
-			1. Error Codes
-			2. Assert Macros
-			3. Setjmp and Longjmp for non-local Jumps
-		9. Multithreading and Concurrency
-		10. Data Structures (quick)
-		11. OOP concepts in C
-		12. procedural programming in C
-		13. Networking
-			1. sockets
-			2. client-server
-			3. TCP vs UDP
-			4. multithreaded network app
-			5. protocols
-		14. Low-level programming
-			1. bitwise
-			2. inline Assembly
-			3. memory-mapped I/O
-			4. interfacing with hardware
-			5. embedded systems
-		15. C advanced memory for embed sys
-			1. custom allocators
-			2. mem pools
-			3. memory allignment for SIMD and specific hardware
-			4. memory frags and defrags
-			5. garbage collection
-		16.  C advanced multithreading for embed sys
-			1. lock-free programming
-			2. thread pulls
-			3. atomic operations
-			4. memory barriers and fences
-			5. deadlock detection and avoidance
-			6. concurrent data structures
-		17.  Compilers and Linkers
-			1. writing C compilers and interpreters
-			2. Compiler optimization
-			3. Linker scripts
-			4. cross compilation for different architecture
-			5. code generation and assembly output from c
-			6. IR compiler design
-		18. embedded C
-			1. direct register access
-			2. writing device drivers
-			3. ISR in embedded systems
-			4. bare metal programming
-			5. real-time operating system
-			6. low-power design and energy aware programming
-		19. metaprogramming
-			1. metaprogramming with injection
-			2. using templates
-			3. code abstraction
-		20. dynamic libraries and linkers
-			1. creating and using shared objects
-			2. position independent code
-			3. inter-process communication
-		21. Advanced File System and I/o
-			1. async i/o (AIO, epoll, kqueue)
-			2. Memory Mapped Files
-			3. High Preformance I/O techniques (DMA, Zero-Copy I/O)
-		22. Low level debugging
-			1. valgrind, perf, gprof
-			2. preformance counters
-			3. compiler optization impact
-			4. reverse engineering of compiled C code
-			5. stack unwinding and core dump analysis
-		23. Systems Programming
-			1. System Calls
-			2. Deamons
-			3. Signals and signal handling
-			4. process control IPC
-			5. memory protection and virtual memory managment
-			6. writing loadable kernal modules
-		24. Hardware-specific
-			1. writing bootlaoders in C
-			2. firmware development
-			3. AVR, ARM Cortex microcontroller programming
-		25. Optimization
-			1. Algorithmic Optimization and Profiling
-			2. Manual Loop Optimization
-			3. Cache-Friendly code
-			4. SIMD
-			5. processor-specific
-			6. inline assembly
-	3. Embedded Systems
-		1. Intro
-			1. micro controller vs micro processor
-			2. Von Nuemann aka Daddy
-			3. IoT, Consumer electronics, Automotive devices
-			4. software vs firmware
-		2. system design
-			1. paritioning
-			2. enviroments
-			3. functional prototyping and simulataitions
-		3. architecture
-			1. CPU Core (RISC, CISC, ARM Cortex, etc.)
-			2. System Buses (AMBA, AHB, APB)
-			3. Registers, Program Counter, Stack Pointer
-			4. Memory Maps (Code, Data, Stack, Heap)
-			5. Memory Types (ROM, RAM, Flash, EEPROM)
-			6. I/O Ports (GPIO, Analog vs Digital)
-		4. Programming Embedded Systems
-			1. Writing Bare Metal Code (No OS)  
-			2. Writing and Debugging Firmware  
-			3. Startup Code and Initialization Sequences  
-			4. Reset and Boot Sequences  
-			5. Handling Interrupts and ISRs (Interrupt Service Routines)  
-			6. Peripheral Control Registers (Memory-Mapped I/O)
-		5. RTOS
-			1. this will need its own course
-		6. Power management
-			1. power consumption in embedded systems
-			2. sleep modes and low-power states
-			3. dynamic power scaling
-			4. dynamic voltage frequency scaling
-			5. power gating and clock gating
-			6. energy effecient hardware and software
-		7. interrupts and exception handling
-			1. interrupt vector table
-			2. nested vectored interrupt controller
-			3. prioritizing interrupts
-			4. software interrupts and traps
-			5. sync vs async
-		8. Memory managment
-			1. static vs dynamic allocation
-			2. MPU
-			3. DMA
-			4. cache control
-			5. Memory Access Latency Optimization
-			6. non-volatile memory programming
-		9. peripherals and communication protocals
-			1. universail asynchronous reciever/transmitter (UART)
-			2. serial peripheral interface SPI
-			3. inter-integrated circuit (I2C)
-		10. Timers
-		11. Bootlaoders
-			2. understanding bootloaders
-			3. customizing bootloaders
-			4. booting from flash, eeprom, and sd cards
-			5. secure bootlaoders and cryptographic signing
-			6. chain bootloaders
-	4. Operating Systems
-		1. Processes and Threads
-			1. process lifecycle
-			2. process control block
-			3. threads
-			4. user-level vs kernel level
-			5. thread scheduling and context switching
-		2. process synchronization
-			1. race condtions
-			2. critical section problem
-			3. mutexes and semaphores
-			4. monitors and condition variables
-			5. deadlocks
-			6. inter-process communication
-		3. CPU scheduling
-			1. scheduling algorithms
-			2. preemptive vs non-preemptive scheduling
-			3. multi-level queue scheduling
-			4. multi-processor scheduling
-			5. real-time scheduling
-		4. Memory management
-			1. memory heirachy (registers, cache, main memory, seconday stoage)
-			2. paging and segmentation
-			3. virtual ram
-			4. page replacement algorithms
-			5. memory allocation techniques
-			6. demand page and swapping
-		5. File systems
-		6. I/O systems
-			1. controllers, ports, busses
-			2. polling vs interrupt-driven io
-			3. DMA
-			4. I/O scheduling
-			5. disk scheduling
-			6. RAID Levels
-		7. Security
-			1. system security
-			2. protection mechnaisms
-			3. secure operating systems
-			4. attack vectors
-			5. malware and intrustion detection
-			6. secure boot and trusted computing
-		8. Kernal Programming
-			1. kernal mode vs user mode
-			2. sys calls
-			3. kernal data structures
-			4. writing level modules and drivers
-			5. kernel preemption and real-time kernels
-			6. scheduling in kernel space
-		9. distributed systems
-			1. charactersics of distrubited systems
-			2. distrbuted file systems
-			3. disbrutied coordination
-			4. time and clock sync
-			5. distrbuted process scheduling
-			6. CAP therom
-	5. Assembly and Basic Computer Organization
-		1. Assembly
-			1. what is Assembly
-			2. why use Assembly
-			3. machine language vs assembly
-			4. assembly syntax
-			5. assmbler, linker, loader
-		2. Logic Gates and Boolean Algrebra
-			1. Logic Gates (AND, OR, NOT, XOR, NAND, NOR)
-			2. Truth Tables and Boolean Expressions
-			3. Combinational Logic Circuits
-			4. K-maps
-			5. Hardware implementation
-		3. ALU (arithmetic logic unit)
-			1. Role of the ALU in the CPU
-			2. Arithemtic Operations
-			3. Bitwise Operations
-			4. signed and unsigned arithmetic
-			5. overflow and undersflow detection in ALU
-			6. building an ALU with logic gates
-		4. Registers and Data Movement
-			1. role of register in the CPU
-			2. General purpose registers vs special purpose registers
-			3. register operations
-			4. stack pointer and frame pointer registers
-			5. register indrect adressing
-			6. shift registers and their use in data manipulation
-		5. Control Unit
-			1. role of the CU in instruction execution
-			2. microprogrammed vs hardwired control units
-			3. control signals and timing diagrams
-			4. fetch-decode-execute Cycle
-			5. control unit logic gates
-		6. inscrution set arcitecture
-			1. understand ISA layer
-			2. CISC vs RISC architecture
-			3. instruction formats (OPCODE, operands, adressing modes)
-			4. adressing modes
-			5. instruction pipelining
-			6. preformance implication of different ISAs
-		7. x86
-			1. x86 registers
-			2. x86 instruction set
-			3. x86 addressing modes
-			4. stack operations
-			5. floating point arithemtic
-		8. RISC
-			1. overview of risc
-			2. risc regisers and register windows
-			3. risc instruction pipelining
-			4. load/store
-			5. modern risc architectures (ARM, MIPS, RISC-V)
-		9. Assembler and Linker
-		10. Microprogramming
-		11. Floating point arithmetic
-		12. Branching and Control Flow
-			1. Conditional and uncoditioanl branching
-			2. Loops and jumps
-			3. comparing and testing
-			4. call and return
-			5. subroutines and procedure calls
-			6. stack grame management and recursive calls
-		13. low level hardware interfaceing
-			1. assembly with hardware
-			2. ISR
-			3. writing device drivers in assembly
-			4. drect memory access
-			5. i/o control
-		14. Advanced Control Unit Design
-			1. Finite state machine
-			2. timing and control clocking
-			3. generating control signals from microinstructions
-			4. power effeicent control unit design
-		15. Optimizing Assembly Code
-			1. Loop Unrolling
-			2. Instruction SCheduling and Reording
-			3. Reduce branching penalities
-			4. Minimizing memory accesses
-			5. SIMD
-		16. Emerging Architectures and Trends
-			1. RISC-V
-			2. Quantum Assembly
-			3. ARM64
-			4. VLIW
-			5. FPGAs
-			6. Assembly for Embedded Systems
-	6. Computer Graphics and Linear Algebra
-		1. Computer Graphics Intro
-			1. What is Computer Graphics
-			2. 2d vs 3d graphics
-			3. Graphics libraries in C (OpenGL, Vulkan, DirectX)
-			4. coordinate system and screen space
-			5. pixels and framebuffers
-		2. Raster Graphics
-			1. Drawing points and lines (Bresenham's line algorithm)
-			2. Line clipping
-			3. circile and ellipse drawing algorithms
-			4. polygon filling algorithms
-			5. antialising techniques
-			6. bitmap manipulation
-		3. 3D graphics pipelines
-			1. Transformations
-			2. Homogenous cordinates and perspective division
-			3. viewport transformations
-			4. backface culling and depth buffering
-			5. shaders and programmable pipeline
-		4. Basic 3D Geometry
-			1. points, vectors, and normals
-			2. vector operations
-			3. planes and lines in 3D
-			4. bounding volumes
-			5. ray casing and ray-sphere, ray-plane intersections
-			6. spatial data structures
-		5. transformations
-			1. traslation, rotation, and scaling
-			2. rotation matrices and quaternions
-			3. matrix transformations
-			4. composite transformations
-			5. coordante spaces
-			6. camera models
-		6. shading and lighting
-			1. the phong reflection model
-			2. gouraud shing vs phong shading
-			3. directional, point, and spot lights
-			4. attenuation
-		7. textuing
-		8. Graphics optimization
-			1. level of detail tequiniques
-			2. frustum culling occulsion culling
-			3. optimize pipeline
-			4. memory managment
-			5. GPU vs CPU
-		9. Vectors
-		10. matrices
-		11. transformations
-		12. functions of several variables
-		13. gradients and optimization
-		14. multiple intergals
-		15. vector calculus
-		16. curves and surfaces in 3D
-2. The ESP-IDF
-	1. Introduction
-		1. setting up enviroment
-		2. ESP-IDF project structure
-	2. ESP32 System Architecture
-		1. Daul-core architecture
-		2. Memory and Memory Map
-		3. power management and sleep modes
-		4. clocking systems and clock tree
-		5. ROM bootloader, application loading and execution
-		6. app partioning and bootloader configureation
-	3. FreeRTOS and Multitasking
-		1. understing FreeRTOS kernel in ESP32
-		2. task creation, scheduling, and priorities
-		3. synchronization (semaphores, queues, and mutexes)
-		4. Task and CPU Mangement
-			1. switching between cores
-			2. memory management
-			3. preformaing monitoring
-		5. Task Notications
-		6. Event Groups
-		7. Timers
-		8. Callbacks
-		9. High-resolution Timers
-		10. IPC
-		11. freeRTOS tickless idl
-		12. FreeRTOS trace and statiscis
-		13. Task state monitoring
-		14. preformanc profiling
-	4. GPIO and Perhipherals
-		1. Configure GPIO
-		2. GPIO pull-up/pull-down resistors
-		3. Using GPIO interrupts for real-time events
-		4. Using SPI interface
-		5. I2C communcation
-		6. PWM and LED control
-	5. ADC and DAC
-		1. analog to digital converstion
-		2. digital to analog conversion
-	6. Serial COmmunication
-		1. UART
-		2. SPI
-		3. I2C
-	7. Networking with ESP32
-		1. wifi
-		2. TCP
-		3. IP
-		4. UDP
-		5. HTTP
-	8. Bluetooth
-	9. HTTP,HTTPS, and webservices
-	10. security and encryption
-	11. file system
-		1. nvs
-		2. SPIFFS and FAT
-	12. OTA updates
-	13. advanced freeRTOS and Task managment
-		1. using message queues, semaphores, and event groups
-		2. advanced task sync
-		3. memory allocation
-		4. inter process comunication
-	14. power management
-	15. system timers
-	16. preformance monitoring
-	17. ESP-IDF logging
-	18. Heap debugging
-	19. proferomance optimization techniques
-	20. Motor Control
-	21. Touche and temperature secor
-	22. advanced GPIO and intterupts
-3. ESP-IDF Game Development
-	1. Introduction
-	2. ESP Basic Game Loop with FreeRTOS
-	3. Display and Graphics Programming
-		1. displays
-		2. drawing basic shapes and images
-		3. sprite handling and animation
-	4. User input and interaction
-		1. handling buttons
-		2. touch integration
-		3. input deboucing and response optimization
-	5. game physics
-		1. collisions
-		2. game state managment
-	6. sound integration
-		1. I2S for audio output
-		2. creaing and playing sound effects
-		3. controlling volume and aduio quality
-	7. networking and multiplayer
-		1. introduction to networking in games
-		2. client server
-		3. websockets
-	8. graphics optimization
-		1. game loop for real time preformance
-		2. power resource managment
-	9. Game menus
-	10. NVS for saving states
-4. ESP32-IDF Cryptocurrency
-	1. TBD
+### 1.1 Computer Architecture
+- ISA
+- Microarchitecture
+- System Design
+- Assembly
+- Logic Implementation
+- Circuit Implementation
+- Efficiency
+- Processors
+- Graphical Processing Units
+
+### 1.2 C-Programming
+- Basic Syntax Quick
+- **Arrays**:
+  - Arrays as Functions
+  - Character Arrays
+- **Memory**:
+  - Heap vs Stack
+  - Dynamic Memory Allocation
+  - Everything Pointers
+- **Structures**:
+  - Self-Referential Structures
+  - Unions
+  - Bit-Fields in Structures
+- File Handling
+- **Advanced Memory Management and Pointers**:
+  - Memory Leaks
+  - Memory Management Techniques
+  - Buffer Overflow
+  - Security Vulnerabilities
+  - Constant Pointers
+  - Void Pointers
+  - Function Pointer Arrays and Callbacks
+- **Preprocessor Directives**:
+  - Macros
+  - Conditional Compilation
+  - File Inclusion
+  - Stringizing and Token Pasting
+- **Error Handling**:
+  - Error Codes
+  - Assert Macros
+  - Setjmp and Longjmp for Non-Local Jumps
+- Multithreading and Concurrency
+- Data Structures (Quick)
+- OOP Concepts in C
+- Procedural Programming in C
+- **Networking**:
+  - Sockets
+  - Client-Server
+  - TCP vs UDP
+  - Multithreaded Network App
+  - Protocols
+- **Low-Level Programming**:
+  - Bitwise
+  - Inline Assembly
+  - Memory-Mapped I/O
+  - Interfacing with Hardware
+  - Embedded Systems
+- **C Advanced Memory for Embedded Systems**:
+  - Custom Allocators
+  - Memory Pools
+  - Memory Alignment for SIMD and Specific Hardware
+  - Memory Fragments and Defrags
+  - Garbage Collection
+- **C Advanced Multithreading for Embedded Systems**:
+  - Lock-Free Programming
+  - Thread Pools
+  - Atomic Operations
+  - Memory Barriers and Fences
+  - Deadlock Detection and Avoidance
+  - Concurrent Data Structures
+- **Compilers and Linkers**:
+  - Writing C Compilers and Interpreters
+  - Compiler Optimization
+  - Linker Scripts
+  - Cross Compilation for Different Architectures
+  - Code Generation and Assembly Output from C
+  - IR Compiler Design
+- **Embedded C**:
+  - Direct Register Access
+  - Writing Device Drivers
+  - ISR in Embedded Systems
+  - Bare Metal Programming
+  - Real-Time Operating System
+  - Low-Power Design and Energy-Aware Programming
+- **Metaprogramming**:
+  - Metaprogramming with Injection
+  - Using Templates
+  - Code Abstraction
+- **Dynamic Libraries and Linkers**:
+  - Creating and Using Shared Objects
+  - Position-Independent Code
+  - Inter-Process Communication
+- **Advanced File System and I/O**:
+  - Async I/O (AIO, epoll, kqueue)
+  - Memory Mapped Files
+  - High Performance I/O Techniques (DMA, Zero-Copy I/O)
+- **Low-Level Debugging**:
+  - Valgrind, Perf, Gprof
+  - Performance Counters
+  - Compiler Optimization Impact
+  - Reverse Engineering of Compiled C Code
+  - Stack Unwinding and Core Dump Analysis
+- **Systems Programming**:
+  - System Calls
+  - Daemons
+  - Signals and Signal Handling
+  - Process Control IPC
+  - Memory Protection and Virtual Memory Management
+  - Writing Loadable Kernel Modules
+- **Hardware-Specific**:
+  - Writing Bootloaders in C
+  - Firmware Development
+  - AVR, ARM Cortex Microcontroller Programming
+- **Optimization**:
+  - Algorithmic Optimization and Profiling
+  - Manual Loop Optimization
+  - Cache-Friendly Code
+  - SIMD
+  - Processor-Specific Optimization
+  - Inline Assembly
+
+---
+
+## 2. Embedded Systems
+
+### 2.1 Intro
+- Microcontroller vs Microprocessor
+- Von Neumann Architecture
+- IoT, Consumer Electronics, Automotive Devices
+- Software vs Firmware
+
+### 2.2 System Design
+- Partitioning
+- Environments
+- Functional Prototyping and Simulations
+
+### 2.3 Architecture
+- CPU Core (RISC, CISC, ARM Cortex, etc.)
+- System Buses (AMBA, AHB, APB)
+- Registers, Program Counter, Stack Pointer
+- Memory Maps (Code, Data, Stack, Heap)
+- Memory Types (ROM, RAM, Flash, EEPROM)
+- I/O Ports (GPIO, Analog vs Digital)
+
+### 2.4 Programming Embedded Systems
+- Writing Bare Metal Code (No OS)
+- Writing and Debugging Firmware
+- Startup Code and Initialization Sequences
+- Reset and Boot Sequences
+- Handling Interrupts and ISRs (Interrupt Service Routines)
+- Peripheral Control Registers (Memory-Mapped I/O)
+
+### 2.5 RTOS
+- This will need its own course
+
+### 2.6 Power Management
+- Power Consumption in Embedded Systems
+- Sleep Modes and Low-Power States
+- Dynamic Power Scaling
+- Dynamic Voltage Frequency Scaling
+- Power Gating and Clock Gating
+- Energy Efficient Hardware and Software
+
+### 2.7 Interrupts and Exception Handling
+- Interrupt Vector Table
+- Nested Vectored Interrupt Controller
+- Prioritizing Interrupts
+- Software Interrupts and Traps
+- Synchronous vs Asynchronous Interrupts
+
+### 2.8 Memory Management
+- Static vs Dynamic Allocation
+- MPU (Memory Protection Unit)
+- DMA (Direct Memory Access)
+- Cache Control
+- Memory Access Latency Optimization
+- Non-Volatile Memory Programming
+
+### 2.9 Peripherals and Communication Protocols
+- Universal Asynchronous Receiver/Transmitter (UART)
+- Serial Peripheral Interface (SPI)
+- Inter-Integrated Circuit (I2C)
+
+### 2.10 Timers
+
+### 2.11 Bootloaders
+- Understanding Bootloaders
+- Customizing Bootloaders
+- Booting from Flash, EEPROM, and SD Cards
+- Secure Bootloaders and Cryptographic Signing
+- Chain Bootloaders
+
+---
+
+## 3. Operating Systems
+
+### 3.1 Processes and Threads
+- Process Lifecycle
+- Process Control Block
+- Threads
+- User-Level vs Kernel-Level Threads
+- Thread Scheduling and Context Switching
+
+### 3.2 Process Synchronization
+- Race Conditions
+- Critical Section Problem
+- Mutexes and Semaphores
+- Monitors and Condition Variables
+- Deadlocks
+- Inter-Process Communication
+
+### 3.3 CPU Scheduling
+- Scheduling Algorithms
+- Preemptive vs Non-Preemptive Scheduling
+- Multi-Level Queue Scheduling
+- Multi-Processor Scheduling
+- Real-Time Scheduling
+
+### 3.4 Memory Management
+- Memory Hierarchy (Registers, Cache, Main Memory, Secondary Storage)
+- Paging and Segmentation
+- Virtual RAM
+- Page Replacement Algorithms
+- Memory Allocation Techniques
+- Demand Paging and Swapping
+
+### 3.5 File Systems
+
+### 3.6 I/O Systems
+- Controllers, Ports, Buses
+- Polling vs Interrupt-Driven I/O
+- DMA
+- I/O Scheduling
+- Disk Scheduling
+- RAID Levels
+
+### 3.7 Security
+- System Security
+- Protection Mechanisms
+- Secure Operating Systems
+- Attack Vectors
+- Malware and Intrusion Detection
+- Secure Boot and Trusted Computing
+
+### 3.8 Kernel Programming
+- Kernel Mode vs User Mode
+- System Calls
+- Kernel Data Structures
+- Writing Kernel-Level Modules and Drivers
+- Kernel Preemption and Real-Time Kernels
+- Scheduling in Kernel Space
+
+### 3.9 Distributed Systems
+- Characteristics of Distributed Systems
+- Distributed File Systems
+- Distributed Coordination
+- Time and Clock Sync
+- Distributed Process Scheduling
+- CAP Theorem
+
+---
+
+## 4. Assembly and Basic Computer Organization
+
+### 4.1 Assembly
+- What is Assembly
+- Why Use Assembly
+- Machine Language vs Assembly
+- Assembly Syntax
+- Assembler, Linker, Loader
+
+### 4.2 Logic Gates and Boolean Algebra
+- Logic Gates (AND, OR, NOT, XOR, NAND, NOR)
+- Truth Tables and Boolean Expressions
+- Combinational Logic Circuits
+- K-Maps
+- Hardware Implementation
+
+### 4.3 ALU (Arithmetic Logic Unit)
+- Role of the ALU in the CPU
+- Arithmetic Operations
+- Bitwise Operations
+- Signed and Unsigned Arithmetic
+- Overflow and Underflow Detection in ALU
+- Building an ALU with Logic Gates
+
+### 4.4 Registers and Data Movement
+- Role of Register in the CPU
+- General Purpose vs Special Purpose Registers
+- Register Operations
+- Stack Pointer and Frame Pointer Registers
+- Register Indirect Addressing
+- Shift Registers and Their Use in Data Manipulation
+
+### 4.5 Control Unit
+- Role of the Control Unit in Instruction Execution
+- Microprogrammed vs Hardwired Control Units
+- Control Signals and Timing Diagrams
+- Fetch-Decode-Execute Cycle
+- Control Unit Logic Gates
+
+### 4.6 Instruction Set Architecture
+- Understanding ISA Layer
+- CISC vs RISC Architecture
+- Instruction Formats (OPCODE, Operands, Addressing Modes)
+- Addressing Modes
+- Instruction Pipelining
+- Performance Implication of Different ISAs
+
+### 4.7 x86
+- x86 Registers
+- x86 Instruction Set
+- x86 Addressing Modes
+- Stack Operations
+- Floating Point Arithmetic
+
+### 4.8 RISC
+- Overview of RISC
+- RISC Registers and Register Windows
+- RISC Instruction Pipelining
+- Load/Store Architecture
+- Modern RISC Architectures (ARM, MIPS, RISC-V)
+
+### 4.9 Assembler and Linker
+
+### 4.10 Microprogramming
+
+### 4.11 Floating Point Arithmetic
+
+### 4.12 Branching and Control Flow
+- Conditional and Unconditional Branching
+- Loops and Jumps
+- Comparing and Testing
+- Call and Return
+- Subroutines and Procedure Calls
+- Stack Frame Management and Recursive Calls
+
+### 4.13 Low-Level Hardware Interfacing
+- Assembly with Hardware
+- ISR (Interrupt Service Routine)
+- Writing Device Drivers in Assembly
+- Direct Memory Access (DMA)
+- I/O Control
+
+### 4.14 Advanced Control Unit Design
+- Finite State Machine
+- Timing and Control Clocking
+- Generating Control Signals from Microinstructions
+- Power Efficient Control Unit Design
+
+### 4.15 Optimizing Assembly Code
+- Loop Unrolling
+- Instruction Scheduling and Reordering
+- Reducing Branching Penalties
+- Minimizing Memory Accesses
+- SIMD
+
+### 4.16 Emerging Architectures and Trends
+- RISC-V
+- Quantum Assembly
+- ARM64
+- VLIW
+- FPGAs
+- Assembly for Embedded Systems
+
+---
+
+## 5. Computer Graphics and Linear Algebra
+
+### 5.1 Computer Graphics Intro
+- What is Computer Graphics
+- 2D vs 3D Graphics
+- Graphics Libraries in C (OpenGL, Vulkan, DirectX)
+- Coordinate System and Screen Space
+- Pixels and Framebuffers
+
+### 5.2 Raster Graphics
+- Drawing Points and Lines (Bresenham's Line Algorithm)
+- Line Clipping
+- Circle and Ellipse Drawing Algorithms
+- Polygon Filling Algorithms
+- Antialiasing Techniques
+- Bitmap Manipulation
+
+### 5.3 3D Graphics Pipelines
+- Transformations
+- Homogeneous Coordinates and Perspective Division
+- Viewport Transformations
+- Backface Culling and Depth Buffering
+- Shaders and Programmable Pipeline
+
+### 5.4 Basic 3D Geometry
+- Points, Vectors, and Normals
+- Vector Operations
+- Planes and Lines in 3D
+- Bounding Volumes
+- Ray Casting and Ray-Sphere, Ray-Plane Intersections
+- Spatial Data Structures
+
+### 5.5 Transformations
+- Translation, Rotation, and Scaling
+- Rotation Matrices and Quaternions
+- Matrix Transformations
+- Composite Transformations
+- Coordinate Spaces
+- Camera Models
+
+### 5.6 Shading and Lighting
+- The Phong Reflection Model
+- Gouraud Shading vs Phong Shading
+- Directional, Point, and Spot Lights
+- Attenuation
+
+### 5.7 Texturing
+
+### 5.8 Graphics Optimization
+- Level of Detail Techniques
+- Frustum Culling and Occlusion Culling
+- Optimizing the Pipeline
+- Memory Management
+- GPU vs CPU
+
+### 5.9 Vectors
+
+### 5.10 Matrices
+
+### 5.11 Transformations
+
+### 5.12 Functions of Several Variables
+
+### 5.13 Gradients and Optimization
+
+### 5.14 Multiple Integrals
+
+### 5.15 Vector Calculus
+
+### 5.16 Curves and Surfaces in 3D
+
+---
+
+## 6. The ESP-IDF
+
+### 6.1 Introduction
+- Setting Up Environment
+- ESP-IDF Project Structure
+
+### 6.2 ESP32 System Architecture
+- Dual-Core Architecture
+- Memory and Memory Map
+- Power Management and Sleep Modes
+- Clocking Systems and Clock Tree
+- ROM Bootloader, Application Loading, and Execution
+- App Partitioning and Bootloader Configuration
+
+### 6.3 FreeRTOS and Multitasking
+- Understanding FreeRTOS Kernel in ESP32
+- Task Creation, Scheduling, and Priorities
+- Synchronization (Semaphores, Queues, and Mutexes)
+- Task and CPU Management:
+  - Switching Between Cores
+  - Memory Management
+  - Performance Monitoring
+- Task Notifications
+- Event Groups
+- Timers
+- Callbacks
+- High-Resolution Timers
+- IPC (Inter-Process Communication)
+- FreeRTOS Tickless Idle
+- FreeRTOS Trace and Statistics
+- Task State Monitoring
+- Performance Profiling
+
+### 6.4 GPIO and Peripherals
+- Configure GPIO
+- GPIO Pull-up/Pull-down Resistors
+- Using GPIO Interrupts for Real-Time Events
+- Using SPI Interface
+- I2C Communication
+- PWM and LED Control
+
+### 6.5 ADC and DAC
+- Analog to Digital Conversion (ADC)
+- Digital to Analog Conversion (DAC)
+
+### 6.6 Serial Communication
+- UART
+- SPI
+- I2C
+
+### 6.7 Networking with ESP32
+- Wi-Fi
+- TCP/IP
+- UDP
+- HTTP/HTTPS
+
+### 6.8 Bluetooth
+
+### 6.9 HTTP, HTTPS, and Web Services
+
+### 6.10 Security and Encryption
+
+### 6.11 File Systems
+- NVS (Non-Volatile Storage)
+- SPIFFS and FAT
+
+### 6.12 OTA (Over-The-Air) Updates
+
+### 6.13 Advanced FreeRTOS and Task Management
+- Using Message Queues, Semaphores, and Event Groups
+- Advanced Task Synchronization
+- Memory Allocation
+- Inter-Process Communication
+
+### 6.14 Power Management
+
+### 6.15 System Timers
+
+### 6.16 Performance Monitoring
+
+### 6.17 ESP-IDF Logging
+
+### 6.18 Heap Debugging
+
+### 6.19 Performance Optimization Techniques
+
+### 6.20 Motor Control
+
+### 6.21 Touch and Temperature Sensor
+
+### 6.22 Advanced GPIO and Interrupts
+
+---
+
+## 7. ESP-IDF Game Development
+
+### 7.1 Introduction
+
+### 7.2 ESP Basic Game Loop with FreeRTOS
+
+### 7.3 Display and Graphics Programming
+- Displays
+- Drawing Basic Shapes and Images
+- Sprite Handling and Animation
+
+### 7.4 User Input and Interaction
+- Handling Buttons
+- Touch Integration
+- Input Debouncing and Response Optimization
+
+### 7.5 Game Physics
+- Collisions
+- Game State Management
+
+### 7.6 Sound Integration
+- I2S for Audio Output
+- Creating and Playing Sound Effects
+- Controlling Volume and Audio Quality
+
+### 7.7 Networking and Multiplayer
+- Introduction to Networking in Games
+- Client-Server
+- Websockets
+
+### 7.8 Graphics Optimization
+- Game Loop for Real-Time Performance
+- Power Resource Management
+
+### 7.9 Game Menus
+
+### 7.10 NVS for Saving Game States
+
+---
+
+## 8. ESP32-IDF Cryptocurrency
+
+TBD
 
 
 
