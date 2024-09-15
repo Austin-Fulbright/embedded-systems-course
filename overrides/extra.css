@@ -1,0 +1,10 @@
+/* Change the background color of the header */
+.md-header {
+    background-color: #1e88e5;
+  }
+  
+  /* Change the font color of the header text */
+  .md-header-nav__title {
+    color: white;
+  }
+  

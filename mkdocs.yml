@@ -3,6 +3,8 @@ site_url: "https://Austin-Fulbright.github.io/embedded-systems-course/"
 theme:
   name: material
   custom_dir: overrides
+  extra_css:
+    - extra.css
 
 nav:
   - Home: index.md
