@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/Course/Computer-Architecture/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/Course/Computer-Architecture/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/Course/Computer-Architecture/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/index.md"
+                "file": "docs/Course/Computer-Architecture/index.md"
               }
             }
           }
@@ -146,8 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e43dba2f1135cde0",
+  "active": "9da151611cf2c70d",
   "lastOpenFiles": [
+    "docs/Course/Operating-Systems/index.md",
+    "docs/Course/Computer-Architecture/index.md",
+    "docs/Course/FreeRTOS/index.md",
+    "docs/Course/Espressif/index.md",
+    "docs/Course/ESP-IDF-for-game-development/index.md",
+    "docs/Course/ESP-IDF-for-cryptocurrency/index.md",
+    "docs/Course/ESP-IDF/index.md",
+    "docs/Course/Embedded-Systems/index.md",
+    "docs/index.md",
     "docs/Course/ESP-IDF-for-cryptocurrency",
     "docs/Course/ESP-IDF-for-game-development",
     "docs/Course/ESP-IDF",
@@ -157,10 +166,8 @@
     "docs/Course/Operating-Systems",
     "docs/Course/Computer-Architecture",
     "docs/Course/Introduction/Untitled.md",
-    "docs/index.md",
     "site/Course/C-programming/systems_programming/systems_programming/index.html",
     "site/Course/C-programming/systems_programming/systems_programming",
-    "site/Course/C-programming/systems_programming 2/process_control_ipc/process_control_ipc/index.html",
     "README.md",
     "docs/Course/C-programming/basic_syntax_quick/basic_syntax_quick.md",
     "Pasted image 20240915105701.png",
@@ -177,13 +184,6 @@
     "docs/Course/C-programming/hardware_specific_programming/bootloaders/bootloaders.md",
     "docs/Course/C-programming/hardware_specific_programming/avr_arm_programming/avr_arm_programming.md",
     "docs/Course/C-programming/hardware_specific_programming/hardware_specific_programming.md",
-    "docs/Course/C-programming/systems_programming/system_calls/system_calls.md",
-    "docs/Course/C-programming/systems_programming/signals/signals.md",
-    "docs/Course/C-programming/systems_programming/process_control_ipc/process_control_ipc.md",
-    "docs/Course/C-programming/systems_programming/memory_protection/memory_protection.md",
-    "docs/Course/C-programming/systems_programming/loadable_kernel_modules/loadable_kernel_modules.md",
-    "docs/Course/C-programming/systems_programming/daemons/daemons.md",
-    "docs/Course/C-programming/systems_programming/systems_programming.md",
-    "docs/Course/C-programming/low_level_debugging/valgrind_perf_gprof/valgrind_perf_gprof.md"
+    "docs/Course/C-programming/systems_programming/system_calls/system_calls.md"
   ]
 }

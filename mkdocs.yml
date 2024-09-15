@@ -118,15 +118,15 @@ nav:
           - SIMD: Course/C-programming/optimization/simd/simd.md
           - Processor-Specific Optimization: Course/C-programming/optimization/processor_specific/processor_specific.md
           - Inline Assembly: Course/C-programming/optimization/inline_assembly/inline_assembly.md
-  - Computer Architecture:
-  - Embedded Systems:
-  - ESP-IDF:
-  - ESP-IDF for cryptocurrecy:
-  - ESP-IDF for game development:
-  - Espressif:
-  - FreeRTOS:
-  - Operating Systems:
-  
+  - Computer Architecture: Course/Computer-Architecture/index.md
+  - Embedded Systems: Course/Embedded-Systems/index.md
+  - ESP-IDF: Course/ESP-IDF/index.md
+  - ESP-IDF for cryptocurrecy: Course/ESP-IDF-for-cryptocurrency/index.md
+  - ESP-IDF for game development: Course/ESP-IDF-for-game-development/index.md
+  - Espressif: Course/Espressif/index.md
+  - FreeRTOS: Course/FreeRTOS/index.md
+  - Operating Systems: Course/Operating-Systems/index.md
+
   
 
 markdown_extensions:
