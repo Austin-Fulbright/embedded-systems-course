@@ -6,7 +6,7 @@ Welcome to the **Embedded Systems with ESP-IDF** course repository! This course 
 
 All the course materials and documentation are available on GitHub Pages.
 
-👉 **[Go to the course introduction](https://Austin-Fulbright.github.io/embedded-systems-course/Course/Introduction/Untitled.html)** 👈
+👉 **[Go to the course introduction](https://Austin-Fulbright.github.io/embedded-systems-course/)** 👈
 
 This link will take you directly to the course introduction, where you can start learning!
 
