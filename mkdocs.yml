@@ -6,11 +6,10 @@ theme:
 nav:
   - Home: index.md
   - Module 1:
-      - Introduction: module1/introduction.md
-      - Setup: module1/setup.md
-  - Module 2:
-      - Topic A: module2/topic_a.md
-      - Topic B: module2/topic_b.md
+      - Introduction: Course/EmbeddedIntroduction/Untitled.md
+  - :
+      - C programming: Course/C-programing/Introduction_C.md
+      - Embedded Systems Basics: docs/Course/Embedded_Systems_Basics_1/Embedded_Basics.md
 markdown_extensions:
   - admonition
   - codehilite
