@@ -146,21 +146,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9da151611cf2c70d",
+  "active": "e43dba2f1135cde0",
   "lastOpenFiles": [
-    "overrides/extra.css",
-    "site/Course/C-programming/systems_programming/memory_protection/memory_protection/index.html",
-    "site/Course/C-programming/systems_programming/memory_protection/memory_protection",
-    "site/Course/C-programming/systems_programming/memory_protection",
-    "site/Course/C-programming/structures/self_referential_structures/self_referential_structures/index.html",
-    "site/Course/C-programming/structures/self_referential_structures/self_referential_structures",
-    "site/Course/C-programming/structures/self_referential_structures",
-    "site/Course/C-programming/networking 2/protocols/protocols/index.html",
-    "site/Course/C-programming/networking 2/protocols/protocols",
-    "site/Course/C-programming/networking 2/protocols",
-    "site/Course/C-programming/metaprogramming/using_templates/using_templates/index.html",
-    "docs/Course/C-programming/basic_syntax_quick/basic_syntax_quick.md",
+    "docs/Course/ESP-IDF-for-cryptocurrency",
+    "docs/Course/ESP-IDF-for-game-development",
+    "docs/Course/ESP-IDF",
+    "docs/Course/Espressif",
+    "docs/Course/FreeRTOS",
+    "docs/Course/Embedded-Systems",
+    "docs/Course/Operating-Systems",
+    "docs/Course/Computer-Architecture",
+    "docs/Course/Introduction/Untitled.md",
     "docs/index.md",
+    "site/Course/C-programming/systems_programming/systems_programming/index.html",
+    "site/Course/C-programming/systems_programming/systems_programming",
+    "site/Course/C-programming/systems_programming 2/process_control_ipc/process_control_ipc/index.html",
+    "README.md",
+    "docs/Course/C-programming/basic_syntax_quick/basic_syntax_quick.md",
     "Pasted image 20240915105701.png",
     "docs/Course/C-programming/advanced_memory_management_and_pointers/advanced_memory_management_and_pointers.md",
     "docs/Course/index.md",
@@ -182,8 +184,6 @@
     "docs/Course/C-programming/systems_programming/loadable_kernel_modules/loadable_kernel_modules.md",
     "docs/Course/C-programming/systems_programming/daemons/daemons.md",
     "docs/Course/C-programming/systems_programming/systems_programming.md",
-    "docs/Course/C-programming/low_level_debugging/valgrind_perf_gprof/valgrind_perf_gprof.md",
-    "docs/Course/C-programming/low_level_debugging/stack_unwinding_core_dump/stack_unwinding_core_dump.md",
-    "docs/Course/C-programming/low_level_debugging/reverse_engineering/reverse_engineering.md"
+    "docs/Course/C-programming/low_level_debugging/valgrind_perf_gprof/valgrind_perf_gprof.md"
   ]
 }
