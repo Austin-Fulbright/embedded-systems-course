@@ -60,8 +60,8 @@ Now, let’s discuss buffer overflows. Imagine you’ve partitioned space in you
 
 Why is this a problem?
 
-- **Data Exposure**: The iron block now sticks out of the storage unit, allowing other users (programs) to see or access it. If the data you’re storing is sensitive, this could expose it to potential theft or misuse.
-- **Overwriting Memory**: The sixth block could overwrite important information stored elsewhere. For example, what if the sixth block crushes a partition meant for your foam blocks? You’ll end up with a block of iron where there should have been foam.
+- **Data Exposure**: Lets say that the part of the storage unit that you write the 6th block to now sticks out of the storage unit and is now visible to anyone outside the storage unit. Well for one, this is embarrasing, now everyone in the world knows you collect iron blocks in your storage unit. and two, people might steal your iron block and imagine that iron block had senstive information about you inscribed on it. This would suck and all because you added more memory than you should have.
+- **Overwriting Memory**: The sixth block could overwrite important information stored elsewhere. For example, what if the sixth block crushes a partition meant for your precious foam blocks that you have also been collecting? When you look at your foam block collection you will see some iron. WTF? you wrote iron blocks into your foam and you cant get that foam back.
 
 
 ```
@@ -106,7 +106,95 @@ In this case, all the partitions are cleared, and the array is initialized with 
 
 ---
 
-With these code examples and visual illustrations (storage units with imaginary partitions), you should now have a better understanding of how arrays work in C, how junk data remains if not initialized, and how buffer overflows can lead to serious problems.
+### Arrays in Practice
 
+So lets go back to just talking about code. You have already learned about primitive types of data and structs. So now lets say you want to create a list of Integers to store data representing all of your favorite numbers. The most effecient way to do this would be to have them stored in an array. I will initialize an array and then add my favorite numbers to them. 
+
+```
+adding numbers
+```
+
+There are numerous types of data structures and arrays are by far the most fundamental and the fastest for reading and in many cases writing as well. The reason for this is that Assembly, the code that C is built ontop of, was written with arrays as a fundamental part of the language. Further more the architecture of your computer is also set up in a way that is conducive with arrays. Now it doesnt have to be Integers you store inside arrays, you can store any type of data inside of an array. Including structures with other data types inside of it. You can even store other arrays inside of them.
+
+### Multi-Dimensional Arrays
+
+A multidimensional array is essentially just an array stored inside of another array. And that can be done multiple times. This is very helpful when you want to store grid like data or matrices. A lot of people will use C or C++ to do linear algebraic calculations because you can use multi-dimensional arrays as matrices. furthermore, the calculations can be optimized with the hardware using C, making it perfect for matrix operations that need to be run fast and often. But a more basic example for multi-dimensional arrays is a graph for a tic-tac-toe game. I want this to be an embedded systems driven course so I took this example from a tic-tac-toe game that was created for a microcontroller in an embedded system.
+
+```
+//	Lines combinations
+const uint8_t test[8][3] =
+{
+	{0,1,2},
+	{3,4,5},
+	{6,7,8},
+	{0,3,6},
+	{1,4,7},
+	{2,5,8},
+	{0,4,8},
+	{2,4,6}
+};
+```
+This was taken from this [repository](https://github.com/VALINT/TicTacToe/blob/master/Software/1611_TicTacToe/1611_TicTacToe/Game.c)
+
+This was used to draw the lines of a win in the tic-tac-toe board. in this particular example the actual board itself was represented in a 1 dimensional array but could also be represented in two dimensions. Regardless, the code visually has the appearance of two dimensional array.
+
+```
+// Game fielsd
+uint8_t game_field[9] = {
+	0, 0, 0,
+	0, 0, 0,
+	0, 0, 0
+};
+```
+
+So this could be rewritten like this
+
+```
+
+// Game fielsd
+uint8_t game_field[3][3] = {
+	{0, 0, 0},
+	{0, 0, 0},
+	{0, 0, 0}
+};
+
+```
+
+
+The reasons for why you would use a two dimensional array will be discussed later when we get more into embedded systems. If you look through the repository you will also see an array that represents the entire screen. Where each value in the array represents a pixel on the microcontrollers screen.
+
+```
+// Frame
+const char Frame[] PROGMEM =
+{
+	255,255,255,127,127,63,31,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,31,63,127,127,255,255,255,
+	255,255,255,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,255,255,255,
+	255,255,255,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,255,255,255,
+	255,255,255,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,255,255,255,
+	255,255,255,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,255,255,255,
+	255,255,255,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,255,255,255,
+	255,255,255,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,255,255,255,
+	255,255,255,254,254,252,248,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,248,252,254,254,255,255,255
+};
+
+```
+
+
+
+I am assuming anyone who is doing this course is deeply interested in lower level programming and how exactly arrays work on a system level. So lets go DEEPER!
+
+
+
+### Buffer Overflow Exploits
+
+
+
+
+
+
+&sources
+
+wikipedia/c
+https://www.youtube.com/watch?v=1S0aBV-Waeo&ab_channel=Computerphile
 
 
