@@ -18,7 +18,7 @@
     
     
       
-        <title>Arrays - Embedded Systems Course</title>
+        <title>Arrays in C and Differences Between C Versions - Embedded Systems Course</title>
       
     
     
@@ -59,6 +59,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#arrays-in-c-and-differences-between-c-versions" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -91,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Arrays
+              Arrays in C and Differences Between C Versions
             
           </span>
         </div>
@@ -3123,6 +3128,61 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#memory-as-a-storage-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memory as a Storage Unit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partitioning-the-storage-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partitioning the Storage Unit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-happens-if-you-dont-clear-out-the-data-in-your-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Happens if You Don't Clear Out the Data in Your Array?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buffer-overflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buffer Overflows
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-example-avoiding-junk-data-with-initialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Example: Avoiding Junk Data with Initialization
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -3137,9 +3197,78 @@
                   
 
 
-  <h1>Arrays</h1>
+<h1 id="arrays-in-c-and-differences-between-c-versions">Arrays in C and Differences Between C Versions<a class="headerlink" href="#arrays-in-c-and-differences-between-c-versions" title="Permanent link">&para;</a></h1>
+<h3 id="memory-as-a-storage-unit">Memory as a Storage Unit<a class="headerlink" href="#memory-as-a-storage-unit" title="Permanent link">&para;</a></h3>
+<p>In C, arrays are simply a series of memory blocks that are allocated for a program to fill with different types of data. Imagine the stack or the heap as a storage unit, where invisible lines divide the storage unit into equal parts for data storage.</p>
+<p>Before you place your data into this "storage unit," it consists of various remnants—like oxygen, nitrogen, hydrogen, water vapor, maybe some dust, and likely leftover junk from the storage unit’s previous user.</p>
+<h3 id="partitioning-the-storage-unit">Partitioning the Storage Unit<a class="headerlink" href="#partitioning-the-storage-unit" title="Permanent link">&para;</a></h3>
+<p>You can draw invisible lines that separate the room and allow you to place whatever you want in those spaces. However, before you put anything into those spaces, you'll want to clear out the junk that's already there. In C, this cleanup step is usually handled when you place elements into your array, but let’s pretend you only put one item into the first partition and leave the rest.</p>
+<p>When you define an array, you create space in memory to perfectly fit your objects. For simplicity’s sake, let’s say you draw five equally spaced imaginary partitions that perfectly fit the objects you want to store—in this case, let’s imagine blocks of iron.</p>
+<div class="highlight"><pre><span></span><code>// Defining an array in C
+int ironBlocks[5]; // Creates an array with 5 partitions
+</code></pre></div>
+<h3 id="what-happens-if-you-dont-clear-out-the-data-in-your-array">What Happens if You Don't Clear Out the Data in Your Array?<a class="headerlink" href="#what-happens-if-you-dont-clear-out-the-data-in-your-array" title="Permanent link">&para;</a></h3>
+<p>Let’s say you only put one iron block in one of the partitions. Technically, you have space for five blocks of iron, but you’ve only used one space. The remaining four partitions still contain leftover junk from the previous "user" of this storage unit. So, when you print out your array, you may see random garbage values in those uninitialized spaces.</p>
+<p>Here’s what that might look like in C:</p>
+<p><div class="highlight"><pre><span></span><code>#include &lt;stdio.h&gt;
 
+int main() {
+    int ironBlocks[5];  // Uninitialized array
+    ironBlocks[0] = 1;  // Only first space is initialized
 
+    for (int i = 0; i &lt; 5; i++) {
+        printf(&quot;%d\n&quot;, ironBlocks[i]);  // Uninitialized elements may print garbage values
+    }
+    return 0;
+}
+</code></pre></div>
+<strong>Output (Example):</strong></p>
+<div class="highlight"><pre><span></span><code>1
+6422296  // Random value
+6422228  // Random value
+0        // Random value
+-12177636 // Random value
+</code></pre></div>
+<p>This is because the array only clears the first block (where you placed your iron block), while the remaining spaces contain "junk data" that was left behind by the system or other programs.</p>
+<p>![[Pasted image 20240917073020.png]]</p>
+<h3 id="buffer-overflows">Buffer Overflows<a class="headerlink" href="#buffer-overflows" title="Permanent link">&para;</a></h3>
+<p>![[Screenshot 2024-09-17 at 7.35.05 AM.png]]</p>
+<p>Now, let’s discuss buffer overflows. Imagine you’ve partitioned space in your storage unit for five blocks of iron. After filling all five spaces, you decide to add a sixth block. This new block sticks out of the predefined space.</p>
+<p>Why is this a problem?</p>
+<ul>
+<li><strong>Data Exposure</strong>: The iron block now sticks out of the storage unit, allowing other users (programs) to see or access it. If the data you’re storing is sensitive, this could expose it to potential theft or misuse.</li>
+<li><strong>Overwriting Memory</strong>: The sixth block could overwrite important information stored elsewhere. For example, what if the sixth block crushes a partition meant for your foam blocks? You’ll end up with a block of iron where there should have been foam.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int ironBlocks[5];
+    for (int i = 0; i &lt;= 5; i++) {
+        ironBlocks[i] = i + 1;  // Causes buffer overflow when i = 5
+    }
+    return 0;
+}
+</code></pre></div>
+<p><strong>Buffer Overflow:</strong> In this code, the loop accesses <code>ironBlocks[5]</code>, which is outside the allocated array size (0 to 4), causing a buffer overflow. This could lead to unintended behavior, memory corruption, or even security vulnerabilities.</p>
+<h3 id="code-example-avoiding-junk-data-with-initialization">Code Example: Avoiding Junk Data with Initialization<a class="headerlink" href="#code-example-avoiding-junk-data-with-initialization" title="Permanent link">&para;</a></h3>
+<p>One way to avoid junk data in your arrays is by initializing them:</p>
+<div class="highlight"><pre><span></span><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int ironBlocks[5] = {0};  // All elements are initialized to 0
+
+    for (int i = 0; i &lt; 5; i++) {
+        printf(&quot;%d\n&quot;, ironBlocks[i]);
+    }
+
+    return 0;
+}
+</code></pre></div>
+<p><strong>Output:</strong></p>
+<p><code>0 0 0 0 0</code></p>
+<p>In this case, all the partitions are cleared, and the array is initialized with <code>0</code> in each space.</p>
+<hr />
+<p>With these code examples and visual illustrations (storage units with imaginary partitions), you should now have a better understanding of how arrays work in C, how junk data remains if not initialized, and how buffer overflows can lead to serious problems.</p>
 
 
 
