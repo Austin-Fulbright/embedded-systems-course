@@ -398,6 +398,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#arrays-in-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arrays in Practice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-dimensional-arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi-Dimensional Arrays
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buffer-overflow-exploits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buffer Overflow Exploits
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3296,6 +3323,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#arrays-in-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arrays in Practice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-dimensional-arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi-Dimensional Arrays
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buffer-overflow-exploits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buffer Overflow Exploits
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3350,8 +3404,8 @@ int main() {
 <p>Now, let’s discuss buffer overflows. Imagine you’ve partitioned space in your storage unit for five blocks of iron. After filling all five spaces, you decide to add a sixth block. This new block sticks out of the predefined space.</p>
 <p>Why is this a problem?</p>
 <ul>
-<li><strong>Data Exposure</strong>: The iron block now sticks out of the storage unit, allowing other users (programs) to see or access it. If the data you’re storing is sensitive, this could expose it to potential theft or misuse.</li>
-<li><strong>Overwriting Memory</strong>: The sixth block could overwrite important information stored elsewhere. For example, what if the sixth block crushes a partition meant for your foam blocks? You’ll end up with a block of iron where there should have been foam.</li>
+<li><strong>Data Exposure</strong>: Lets say that the part of the storage unit that you write the 6<sup>th</sup> block to now sticks out of the storage unit and is now visible to anyone outside the storage unit. Well for one, this is embarrasing, now everyone in the world knows you collect iron blocks in your storage unit. and two, people might steal your iron block and imagine that iron block had senstive information about you inscribed on it. This would suck and all because you added more memory than you should have.</li>
+<li><strong>Overwriting Memory</strong>: The sixth block could overwrite important information stored elsewhere. For example, what if the sixth block crushes a partition meant for your precious foam blocks that you have also been collecting? When you look at your foam block collection you will see some iron. WTF? you wrote iron blocks into your foam and you cant get that foam back.</li>
 </ul>
 <div class="highlight"><pre><span></span><code>#include &lt;stdio.h&gt;
 
@@ -3382,7 +3436,62 @@ int main() {
 <p><code>0 0 0 0 0</code></p>
 <p>In this case, all the partitions are cleared, and the array is initialized with <code>0</code> in each space.</p>
 <hr />
-<p>With these code examples and visual illustrations (storage units with imaginary partitions), you should now have a better understanding of how arrays work in C, how junk data remains if not initialized, and how buffer overflows can lead to serious problems.</p>
+<h3 id="arrays-in-practice">Arrays in Practice<a class="headerlink" href="#arrays-in-practice" title="Permanent link">&para;</a></h3>
+<p>So lets go back to just talking about code. You have already learned about primitive types of data and structs. So now lets say you want to create a list of Integers to store data representing all of your favorite numbers. The most effecient way to do this would be to have them stored in an array. I will initialize an array and then add my favorite numbers to them. </p>
+<div class="highlight"><pre><span></span><code>adding numbers
+</code></pre></div>
+<p>There are numerous types of data structures and arrays are by far the most fundamental and the fastest for reading and in many cases writing as well. The reason for this is that Assembly, the code that C is built ontop of, was written with arrays as a fundamental part of the language. Further more the architecture of your computer is also set up in a way that is conducive with arrays. Now it doesnt have to be Integers you store inside arrays, you can store any type of data inside of an array. Including structures with other data types inside of it. You can even store other arrays inside of them.</p>
+<h3 id="multi-dimensional-arrays">Multi-Dimensional Arrays<a class="headerlink" href="#multi-dimensional-arrays" title="Permanent link">&para;</a></h3>
+<p>A multidimensional array is essentially just an array stored inside of another array. And that can be done multiple times. This is very helpful when you want to store grid like data or matrices. A lot of people will use C or C++ to do linear algebraic calculations because you can use multi-dimensional arrays as matrices. furthermore, the calculations can be optimized with the hardware using C, making it perfect for matrix operations that need to be run fast and often. But a more basic example for multi-dimensional arrays is a graph for a tic-tac-toe game. I want this to be an embedded systems driven course so I took this example from a tic-tac-toe game that was created for a microcontroller in an embedded system.</p>
+<p><div class="highlight"><pre><span></span><code>//  Lines combinations
+const uint8_t test[8][3] =
+{
+    {0,1,2},
+    {3,4,5},
+    {6,7,8},
+    {0,3,6},
+    {1,4,7},
+    {2,5,8},
+    {0,4,8},
+    {2,4,6}
+};
+</code></pre></div>
+This was taken from this <a href="https://github.com/VALINT/TicTacToe/blob/master/Software/1611_TicTacToe/1611_TicTacToe/Game.c">repository</a></p>
+<p>This was used to draw the lines of a win in the tic-tac-toe board. in this particular example the actual board itself was represented in a 1 dimensional array but could also be represented in two dimensions. Regardless, the code visually has the appearance of two dimensional array.</p>
+<div class="highlight"><pre><span></span><code>// Game fielsd
+uint8_t game_field[9] = {
+    0, 0, 0,
+    0, 0, 0,
+    0, 0, 0
+};
+</code></pre></div>
+<p>So this could be rewritten like this</p>
+<div class="highlight"><pre><span></span><code>// Game fielsd
+uint8_t game_field[3][3] = {
+    {0, 0, 0},
+    {0, 0, 0},
+    {0, 0, 0}
+};
+</code></pre></div>
+<p>The reasons for why you would use a two dimensional array will be discussed later when we get more into embedded systems. If you look through the repository you will also see an array that represents the entire screen. Where each value in the array represents a pixel on the microcontrollers screen.</p>
+<div class="highlight"><pre><span></span><code>// Frame
+const char Frame[] PROGMEM =
+{
+    255,255,255,127,127,63,31,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,31,63,127,127,255,255,255,
+    255,255,255,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,255,255,255,
+    255,255,255,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,255,255,255,
+    255,255,255,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,255,255,255,
+    255,255,255,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,255,255,255,
+    255,255,255,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,255,255,255,
+    255,255,255,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,255,255,255,
+    255,255,255,254,254,252,248,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,248,252,254,254,255,255,255
+};
+</code></pre></div>
+<p>I am assuming anyone who is doing this course is deeply interested in lower level programming and how exactly arrays work on a system level. So lets go DEEPER!</p>
+<h3 id="buffer-overflow-exploits">Buffer Overflow Exploits<a class="headerlink" href="#buffer-overflow-exploits" title="Permanent link">&para;</a></h3>
+<p>&amp;sources</p>
+<p>wikipedia/c
+<a href="https://www.youtube.com/watch?v=1S0aBV-Waeo&amp;ab_channel=Computerphile">https://www.youtube.com/watch?v=1S0aBV-Waeo&amp;ab_channel=Computerphile</a></p>
 
 
 
