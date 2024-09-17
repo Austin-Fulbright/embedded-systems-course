@@ -10,7 +10,7 @@ nav:
   - Home: index.md
   - C-Programming:
       - Introduction and Basic Syntax: Course/C-programming/basic_syntax_quick/basic_syntax_quick.md
-      - Arrays:
+      - Arrays: Course/C-programming/arrays/arrays.md
           - Arrays as functions: Course/C-programming/arrays/arrays_as_functions/arrays_as_functions.md
           - Character arrays: Course/C-programming/arrays/character_arrays/character_arrays.md
       - Memory:
